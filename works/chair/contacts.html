@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chair</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat&display=swap" rel="stylesheet"></head>
+<body>
+    <header class="header">
+    <div class="header__wrapper">
+            <section class="our-brand">
+        <!-- <div class="logo"><img class="logo__img" src="../img/logo.png" alt="logo"></div> -->
+        <div class="logo__text">Woodbyrus</div>
+    </section>
+            <nav class="navigation">
+        <ul class="list">
+            <li class="list-item"><a href="index.html" class="list-link">Главная</a></li>
+            <li class="list-item"><a href="catalog.html" class="list-link">Каталог</a></li>
+            <li class="list-item"><a href="contacts.html" class="list-link">Контакты</a></li>
+        </ul>
+    </nav>
+
+        <div class="header__buttons">
+                <section class="login">
+        <div class="login__wrapper">
+            <button class="button login__button" id="login__button" style="width:auto;">Логин</button>
+        </div>
+        <div id="modal" class="modal">
+  
+    <form class="modal-content animate" action="#" method="post">
+      <div class="imgcontainer">
+        <span id="close__btn" class="close" title="Close Modal">&times;</span>
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Email</b></label>
+        <input type="email" placeholder="Введите email" name="email" required>
+  
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Введите пароль" name="psw" required>
+        <a class="forgot" href="#">Забыли пароль?</a>
+          
+        <button class="button" type="submit">Войти</button>
+        <div class="remember">
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+            </label>
+        </div>
+      </div>
+
+    </form>
+  </div>
+    </section>
+                <section class="basket">
+        <a href="basket-page.html">
+            <i class="fas fa-shopping-basket basket__icon icon"></i>
+            <span class="basket__count" id="product-count">1</span>
+        </a>
+    </section>
+        </div>
+        
+    </div>
+</header>
+    <main class="main">
+        <section class="about-us">
+    <div class="about-us__wrapper wrapper">
+        <div class="about-us__info info">
+            <div class="info__header">Lorem ipsum dolor sit amet.</div>
+            <div class="info__body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque inventore eius, ex nulla eligendi saepe tempore sit omnis veniam dicta.</div>
+            <div class="about-us__social">
+                                <div class="social">
+                    <div class="social__wrapper">
+                        <a class="social__link" href="#">
+                            <i class="fab fa-vk vk social__icon"></i>
+                            <div class="social__name">VKontakte</div>
+                        </a>
+                    </div>
+                    <div class="social__wrapper">
+                        <a class="social__link" href="#">
+                            <i class="fab fa-instagram instagram social__icon"></i>
+                            <div class="social__name">Instagram</div>
+                        </a>
+                    </div>
+                    <div class="social__wrapper">
+                        <a class="social__link" href="#">
+                            <i class="fab fa-telegram-plane telegram social__icon"></i>
+                            <div class="social__name">Telegram</div>
+                        </a>
+                    </div>
+                    <div class="social__wrapper">
+                        <a class="social__link" href="#">
+                            <i class="fab fa-facebook facebook social__icon"></i>
+                            <div class="social__name">Facebook</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us__map">
+                        <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=650&amp;height=300&amp;hl=ru&amp;q=Galeria Shopping Mall Ligovsky Ave, 30А, St Petersburg, Russia, 191040&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    <a href="https://www.fridaynightfunkin.net/">Friday Night Funkin PC</a>
+                </div>
+                <style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style>
+            </div>
+        </div>
+        <div class="about-us__copyrights"></div>
+    </div>
+</section>
+    </main>
+    <script src="js/login__modal.min.js"></script>
+</body>
+</html>

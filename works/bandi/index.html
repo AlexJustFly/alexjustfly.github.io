@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bandi</title>
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- my styles -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- <link rel="stylesheet" href="css/all.min.css"> -->
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- bootstrap js -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- icons font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!-- my js -->
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300,400,600,700,800" rel="stylesheet">
+</head>
+<body>
+	<svg id="scroller" width="100" height="100">
+		<circle class="svg_circle" cx="40" cy="40" r="35"></circle>
+		<polyline class="svg_polyline" points="20,50 40,30 60,50"></polyline>
+	</svg>
+	
+	<header class="main-header" id="home">
+		<div class="topheader">
+			<div class="container">
+				<div class="topheader__wrapper row no-gutters">
+					<div class="topheader__logo col-lg-3 col-md-5 col-12">
+						<h1 class="topheader__logo_name">Brandi</h1>
+						<span class="topheader__logo_divider"></span>
+						<p class="topheader__logo_text">I'am your tag line</p>
+					</div>
+					<nav class="topheader__navigation col-lg-4 offset-lg-5 col-md-7 col-12">
+						<ul class="navigation_list">
+							<li class="navigation_list-item">
+								<a class="navigation_link _goto" href="#home">Home</a>
+							</li>
+							<li class="navigation_list-item">
+								<a class="navigation_link _goto" href="#features">Features</a>
+							</li>
+							<li class="navigation_list-item">
+								<a class="navigation_link _goto" href="#works">Works</a>
+							</li>
+							<li class="navigation_list-item">
+								<a class="navigation_link _goto" href="#team">Team</a>
+							</li>
+							<li class="navigation_list-item">
+								<a class="navigation_link _goto" href="#contacts">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="main-header__dots ">
+			<div class="row no-gutters">
+				<div class="slider-dots">
+					<ul class="slider-dots__list">
+						<li class="slider-dots__list-item"><span class="slider-dots__dot"></span></li>
+						<li class="slider-dots__list-item"><span class="slider-dots__dot"></span></li>
+						<li class="slider-dots__list-item"><span class="slider-dots__dot"></span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-header__content container">
+			<div class="row no-gutters">
+				<div class="col-lg-6 offset-lg-3">
+					<h1 class="main-header__content-header">
+						Meet <span class="bold-text">Brandi</span>!
+					</h1>
+					<p class="main-header__content-body">
+						<span class="main-header__content-body_color">/creative</span> one page template.
+					</p>
+					<div class="main-header__content-footer">
+						<span>
+							<img src="img/line.jpg" alt="">
+						</span>
+						<p class="main-header__content-footer_text">We are a team of professionals</p>
+						<span>
+							<img src="img/line.jpg" alt="">
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-header__social container">
+			<div class="row">
+				<div class="col-lg-2 offset-lg-5 main-header__social-wrapper">
+					<ul class="social-list">
+						<li class="social-list__item">
+							<a class="social-list__link" href="https://twitter.com/" target="_blank">
+								<img src="img/twitter-white.png" alt="twitter-link-img">
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a class="social-list__link" href="https://www.facebook.com/" target="_blank">
+								<img src="img/facebook-white.png" alt="facebook-link-img">
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a class="social-list__link" href="https://plus.google.com/" target="_blank">
+								<img src="img/google-white.png" alt="google-link-img">
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a class="social-list__link" href="https://dribbble.com/" target="_blank">
+								<img src="img/dribble-white.png" alt="dribble-link-img">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="features" id="features">
+		<div class="container container-content">
+			<div class="features__header row no-gutters section-header">
+				<div class="col-lg-2 offset-lg-5 col-md-4 offset-md-4 col-6 offset-3">
+					<h3 class="section-header__header">FEATURES</h3>
+					<span class="section-header__img-container">
+						<img class="section-header__img" src="img/section-header-img.png" alt="section-header-img">
+					</span>
+				</div>
+			</div>
+			<div class="features__content row no-gutters">
+				<div class="features__block col-lg-4 col-sm-6 offset-sm-0 col-6 offset-3">
+					<span class="features__block-img col-3">
+						<img src="img/branding-img.png" alt="branding-img">
+					</span>
+					<div class="features__block-content">
+						<h5 class="features__block-header">Branding</h5>
+						<p class="features__block-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+					</div>
+				</div>
+				<div class="features__block col-lg-4 col-sm-6 offset-sm-0 col-6 offset-3">
+					<span class="features__block-img col-3">
+						<img src="img/development-img.png" alt="development-img">
+					</span>
+					<div class="features__block-content">
+						<h5 class="features__block-header">Development</h5>
+						<p class="features__block-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+					</div>
+				</div>
+				<div class="features__block col-lg-4 col-sm-6 offset-sm-0 col-6 offset-3">
+					<span class="features__block-img col-3">
+						<img src="img/consulting-img.png" alt="consulting-img">
+					</span>
+					<div class="features__block-content">
+						<h5 class="features__block-header">Consulting</h5>
+						<p class="features__block-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+					</div>
+				</div>
+			</div>
+			<div class="row features__dots slider-dots_horizontal">
+				<div class="slider-dots">
+					<ul class="slider-dots__list">
+						<li class="slider-dots__list-item">
+							<span class="slider-dots__dot"></span>
+						</li>
+						<li class="slider-dots__list-item">
+							<span class="slider-dots__dot"></span>
+						</li>
+						<li class="slider-dots__list-item">
+							<span class="slider-dots__dot"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="works" id="works">
+		<div class="container container-content">
+			<div class="works__header section-header row no-gutters">
+				<div class="col-lg-2 offset-lg-5 col-md-4 offset-md-4 col-6 offset-3">
+					<h3 class="section-header__header">WORKS</h3>
+					<span class="section-header__img-container">
+						<img class="section-header__img" src="img/section-header-img.png" alt="section-header-img">
+					</span>
+				</div>
+			</div>
+			<div class="works__text row no-gutters">	
+				<div class="col-10 offset-1">
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+				</div>
+			</div>
+			<div class="works__filter row no-gutters">
+				<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-3">
+					<ul class="works__filter_list">
+						<li class="works__filter_list-item" id="works_all">All</li>
+						<li class="works__filter_list-item" id="works_branding">Branding</li>
+						<li class="works__filter_list-item" id="works_web">Web</li>
+						<li class="works__filter_list-item" id="works_logo">Logo Design</li>
+						<li class="works__filter_list-item" id="works_photography">Photography</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="works__images">
+				<div class="modal_window">
+					<span class="modal_close">&times;</span>
+					<img src="img/work1.jpg" class="modal_img" alt="modal-img">
+				</div>
+				<div class="works__images-container web">
+					<img class="works__images_img web" src="img/work1.jpg" alt="">
+					<div class="images-hover">
+						<div class="images-hover_img">
+							<a class="images-hover_img-link" data-target="img/work1.jpg">
+								<img src="img/icon-eye.png" alt="">
+							</a>
+						</div>
+						<div class="images-hover_body">
+							<p class="images-hover_heading">
+								Labore et dolore magnam
+							</p>
+							<p class="images-hover_text">
+								Photography
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="works__images-container web">
+					<img class="works__images_img web" src="img/work2.jpg" alt="">
+					<div class="images-hover">
+						<div class="images-hover_img">
+							<a class="images-hover_img-link" data-target="img/work2.jpg">
+								<img src="img/icon-eye.png" alt="">
+							</a>
+						</div>
+						<div class="images-hover_body">
+							<p class="images-hover_heading">
+								Labore et dolore magnam
+							</p>
+							<p class="images-hover_text">
+								Photography
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="works__images-container photography">
+					<img class="works__images_img photography" src="img/work3.jpg" alt="">
+					<div class="images-hover">
+						<div class="images-hover_img">
+							<a class="images-hover_img-link" data-target="img/work3.jpg">
+								<img src="img/icon-eye.png" alt="">
+							</a>
+						</div>
+						<div class="images-hover_body">
+							<p class="images-hover_heading">
+								Labore et dolore magnam
+							</p>
+							<p class="images-hover_text">
+								Photography
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="works__images-container logo_design">
+					<img class="works__images_img logo_design" src="img/work4.jpg" alt="">
+					<div class="images-hover">
+						<div class="images-hover_img">
+							<a class="images-hover_img-link" data-target="img/work4.jpg">
+								<img src="img/icon-eye.png" alt="">
+							</a>
+						</div>
+						<div class="images-hover_body">
+							<p class="images-hover_heading">
+								Labore et dolore magnam
+							</p>
+							<p class="images-hover_text">
+								Photography
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="works__images-container photography">
+					<img class="works__images_img photography" src="img/work5.jpg" alt="">
+					<div class="images-hover">
+						<div class="images-hover_img">
+							<a class="images-hover_img-link" data-target="img/work5.jpg">
+								<img src="img/icon-eye.png" alt="">
+							</a>
+						</div>
+						<div class="images-hover_body">
+							<p class="images-hover_heading">
+								Labore et dolore magnam
+							</p>
+							<p class="images-hover_text">
+								Photography
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="works__images-container branding">
+					<img class="works__images_img branding" src="img/work6.jpg" alt="">
+					<div class="images-hover">
+						<div class="images-hover_img">
+							<a class="images-hover_img-link" data-target="img/work6.jpg">
+								<img src="img/icon-eye.png" alt="">
+							</a>
+						</div>
+						<div class="images-hover_body">
+							<p class="images-hover_heading">
+								Labore et dolore magnam
+							</p>
+							<p class="images-hover_text">
+								Photography
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="works__images-container web">
+					<img class="works__images_img web" src="img/work7.jpg" alt="">
+					<div class="images-hover">
+						<div class="images-hover_img">
+							<a class="images-hover_img-link" data-target="img/work7.jpg">
+								<img src="img/icon-eye.png" alt="">
+							</a>
+						</div>
+						<div class="images-hover_body">
+							<p class="images-hover_heading">
+								Labore et dolore magnam
+							</p>
+							<p class="images-hover_text">
+								Photography
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="works__images-container web">
+					<img class="works__images_img web" src="img/work8.jpg" alt="">
+					<div class="images-hover">
+						<div class="images-hover_img">
+							<a class="images-hover_img-link" data-target="img/work8.jpg">
+								<img src="img/icon-eye.png" alt="">
+							</a>
+						</div>
+						<div class="images-hover_body">
+							<p class="images-hover_heading">
+								Labore et dolore magnam
+							</p>
+							<p class="images-hover_text">
+								Photography
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="works__hover"></div>
+		</div>
+	</section>
+	<section class="team" id="team">
+		<div class="container container-content">
+			<div class="team__header section-header row no-gutters">
+				<div class="col-lg-2 offset-lg-5 col-md-4 offset-md-4 col-6 offset-3">
+					<h3 class="section-header__header">MEET OUR TEAM</h3>
+					<span class="section-header__img-container">
+						<img class="section-header__img" src="img/section-header-img.png" alt="section-header-img">
+					</span>					
+				</div>
+			</div>
+			<div class="team__text row no-gutters">
+				<div class="col-10 offset-1">
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+				</div>
+			</div>
+			<div class="team__body row">
+				<div class="team__person col-6 offset-3 col-sm-6 offset-sm-0 col-md-3 offset-md-0">
+					<div class="team__person_img-container">
+						<img class="team__person_img" src="img/john-doe.jpg" alt="john">
+						<div class="images-hover">
+							<div class="images-hover_body">
+								<p class="images-hover_heading">
+									Nemo enim ipsam 
+									voluptatem quia voluptas
+								</p>
+								<p class="images-hover_text">
+									sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
+								</p>
+							</div>
+							<div class="images-hover_footer">
+								<ul class="images-hover_social-list">
+									<li class="images-hover_social-list-item">
+										<a href="https://twitter.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/twitter-white-square.png" alt="">
+										</a>
+									</li>
+									<li class="images-hover_social-list-item">
+										<a href="https://www.facebook.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/facebook-white-square.png" alt="">
+										</a>
+									</li>
+									<li class="images-hover_social-list-item">
+										<a href="https://plus.google.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/google-white-square.png" alt="">	
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="team__person_text">
+						<p class="team__person_name">
+							John Filmr Doe
+						</p>
+						<p class="team__person_prof">
+							Managing Director
+						</p>
+					</div>
+				</div>
+				<div class="team__person col-6 offset-3 col-sm-6 offset-sm-0 col-md-3 offset-md-0">
+					<div class="team__person_img-container">
+						<img class="team__person_img" src="img/cris.jpg" alt="cris">
+						<div class="images-hover">
+							<div class="images-hover_body">
+								<p class="images-hover_heading">
+									Nemo enim ipsam 
+									voluptatem quia voluptas
+								</p>
+								<p class="images-hover_text">
+									sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
+								</p>
+							</div>
+							<div class="images-hover_footer">
+								<ul class="images-hover_social-list">
+									<li class="images-hover_social-list-item">
+										<a href="https://twitter.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/twitter-white-square.png" alt="">
+										</a>
+									</li>
+									<li class="images-hover_social-list-item">
+										<a href="https://www.facebook.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/facebook-white-square.png" alt="">
+										</a>
+									</li>
+									<li class="images-hover_social-list-item">
+										<a href="https://plus.google.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/google-white-square.png" alt="">	
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="team__person_text">
+						<p class="team__person_name">
+							Chystine Hineu
+						</p>
+						<p class="team__person_prof">
+							Lead Designer
+						</p>
+					</div>
+				</div>
+				<div class="team__person col-6 offset-3 col-sm-6 offset-sm-0 col-md-3 offset-md-0">
+					<div class="team__person_img-container">
+						<img class="team__person_img" src="img/martin.jpg" alt="martin">
+						<div class="images-hover">
+							<div class="images-hover_body">
+								<p class="images-hover_heading">
+									Nemo enim ipsam 
+									voluptatem quia voluptas
+								</p>
+								<p class="images-hover_text">
+									sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
+								</p>
+							</div>
+							<div class="images-hover_footer">
+								<ul class="images-hover_social-list">
+									<li class="images-hover_social-list-item">
+										<a href="https://twitter.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/twitter-white-square.png" alt="">
+										</a>
+									</li>
+									<li class="images-hover_social-list-item">
+										<a href="https://www.facebook.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/facebook-white-square.png" alt="">
+										</a>
+									</li>
+									<li class="images-hover_social-list-item">
+										<a href="https://plus.google.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/google-white-square.png" alt="">	
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="team__person_text">
+						<p class="team__person_name">
+							Martin Matrone
+						</p>
+						<p class="team__person_prof">
+							Lead Developer
+						</p>
+					</div>
+				</div>
+				<div class="team__person col-6 offset-3 col-sm-6 offset-sm-0 col-md-3 offset-md-0">
+					<div class="team__person_img-container">
+						<img class="team__person_img" src="img/steve.jpg" alt="steve">
+						<div class="images-hover">
+							<div class="images-hover_body">
+								<p class="images-hover_heading">
+									Nemo enim ipsam 
+									voluptatem quia voluptas
+								</p>
+								<p class="images-hover_text">
+									sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
+								</p>
+							</div>
+							<div class="images-hover_footer">
+								<ul class="images-hover_social-list">
+									<li class="images-hover_social-list-item">
+										<a href="https://twitter.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/twitter-white-square.png" alt="">
+										</a>
+									</li>
+									<li class="images-hover_social-list-item">
+										<a href="https://www.facebook.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/facebook-white-square.png" alt="">
+										</a>
+									</li>
+									<li class="images-hover_social-list-item">
+										<a href="https://plus.google.com/" target="_blank" class="images-hover_social-link">
+											<img class="images-hover_social-link-image" src="img/google-white-square.png" alt="">	
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="team__person_text">
+						<p class="team__person_name">
+							Steve Flaulkin
+						</p>
+						<p class="team__person_prof">
+							Sr. UI Designer
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="team__dots slider-dots_horizontal row no-gutters">
+				<div class="slider-dots">
+					<ul class="slider-dots__list">
+						<li class="slider-dots__list-item">
+							<span class="slider-dots__dot"></span>
+						</li>
+						<li class="slider-dots__list-item">
+							<span class="slider-dots__dot"></span>
+						</li>
+						<li class="slider-dots__list-item">
+							<span class="slider-dots__dot"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="funFacts">
+		<div class="funFacts_hover"></div>
+		<div class="container container-content">
+			<div class="funFacts__header section-header row no-gutters">
+				<div class="col-lg-2 offset-lg-5 col-md-4 offset-md-4 col-sm-6 offset-sm-3 col-6 offset-3">
+					<h3 class="section-header__header">SOME FUN FACTS</h3>
+					<span class="section-header__img-container">
+						<img class="section-header__img" src="img/white-section-header.png" alt="section-header-img">
+					</span>					
+				</div>				
+			</div>
+			<div class="funFacts__body row no-gutters">
+				<div class="funFacts__block col-3">
+					<div class="funFacts__block_logo">
+						<img class="funFacts__block_logo-img" src="img/clock.png" alt="clock-img">
+					</div>
+					<div class="funFacts__block_text">
+						<div class="funFacts__block_number" data-target="3200" id="work">3200</div>
+						<div class="funFacts__block_description">HOURS OF WORK</div>
+					</div>
+				</div>
+				<div class="funFacts__block col-3">
+					<div class="funFacts__block_logo">
+						<img class="funFacts__block_logo-img" src="img/friends.png" alt="friends-img">
+					</div>
+					<div class="funFacts__block_text">
+						<div class="funFacts__block_number" data-target="120" id="clients">120</div>
+						<div class="funFacts__block_description">SATISFIED CLIENTS</div>
+					</div>
+				</div>
+				<div class="funFacts__block col-3">
+					<div class="funFacts__block_logo">
+						<img class="funFacts__block_logo-img" src="img/rocket.jpg" alt="rocket-img">
+					</div>
+					<div class="funFacts__block_text">
+						<div class="funFacts__block_number" data-target="360" id="projects">360</div>
+						<div class="funFacts__block_description">PROJECTS DELIVERED</div>
+					</div>
+				</div>
+				<div class="funFacts__block col-3">
+					<div class="funFacts__block_logo">
+						<img class="funFacts__block_logo-img" src="img/cup.jpg" alt="cup-img">
+					</div>
+					<div class="funFacts__block_text">
+						<div class="funFacts__block_number" data-target="42" id="awards">42</div>
+						<div class="funFacts__block_description" >AWARDS WON</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="discuss" id="contacts">
+		<div class="container-fluid">
+			<div class="container container-content">
+				<div class="discuss__header section-header row no-gutters">
+					<div class="col-6 offset-3 col-lg-2 col-md-2 offset-md-5 offset-lg-5 col-sm-4 offset-sm-4">
+						<h3 class="section-header__header">LET'S DISCUSS</h3>
+						<span class="section-header__img-container">
+							<img class="section-header__img" src="img/section-header-img.png" alt="section-header-img">
+						</span>					
+					</div>
+				</div>
+				<div class="discuss__text row no-gutters">
+					<div class="col-10 offset-1">
+						<p>
+							Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+						</p>
+					</div>
+				</div>
+				<div class="discuss__say-hello row">
+					<div class="discuss__say-hello_adress col-lg-3 col-md-3 col-sm-12">
+						<h5 class="discuss__say-hello_adress-heading">Cras at ultrices erat, sed vulputate!</h5>
+						<p class="discuss__say-hello_adress-text">
+							2345 Setwant natrer, 1234,<br> 
+							Washington. United States. <br>
+							(401) 1234 567 <br>
+							hello@brandi.com <br>
+							ww.brandi.com
+						</p>
+					</div>
+					<div class="discuss__say-hello_form-wrapper col-lg-8 col-md-8 col-sm-12">
+						<h4 class="discuss__say-hello_form-heading">
+							Say hello!
+						</h4>
+						<form class="discuss__say-hello_form" action="/action_page.php">
+							<div class="row discuss__say-hello_input-wrapper no-gutters">
+								<div class="col-12 col-sm-6 discuss__say-hello_input-block">
+									<input class="discuss__say-hello_input" type="text" name="name" placeholder="Name">
+								</div>
+								<div class="col-12 col-sm-6 discuss__say-hello_input-block">
+									<input class="discuss__say-hello_input" type="email" name="email" placeholder="Email">
+								</div>
+							</div>
+							<div class="row form_block-wrapper no-gutters">
+								<div class="col-12 discuss__say-hello_input-block">
+									<input class="discuss__say-hello_input" type="text" name="message" placeholder="Message">
+								</div>
+							</div>
+							<div class="row no-gutters discuss__say-hello_button-wrapper">
+								<button class="discuss__say-hello_button" type="submit">
+									<span><img src="img/message-ico.png" alt="message-ico"></span>
+									Send message
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="discuss__say-hello_social col-lg-1 col-md-1 col-sm-6">
+						<ul class="social-list">
+							<li class="social-list__item">
+								<a class="social-list__link" href="https://www.behance.net/" target="_blank">
+									<img src="img/behance-black.png" alt="behance-link-img">
+								</a>
+							</li>
+							<li class="social-list__item">
+								<a class="social-list__link" href="https://twitter.com/" target="_blank">
+									<img src="img/twitter-black.png" alt="twitter-link-img">
+								</a>
+							</li>
+							<li class="social-list__item">
+								<a class="social-list__link" href="https://dribbble.com/" target="_blank">
+									<img src="img/dribble-black.png" alt="dribble-link-img">
+								</a>
+							</li>
+							<li class="social-list__item">
+								<a class="social-list__link" href="https://www.facebook.com/forrst/" target="_blank">
+									<img src="img/forrst-black.png" alt="forrst-link-img">
+								</a>
+							</li>
+							<li class="social-list__item">
+								<a class="social-list__link" href="https://plus.google.com/" target="_blank">
+									<img src="img/google-black.png" alt="google-link-img">
+								</a>
+							</li>
+						</ul>						
+					</div>
+				</div>
+			</div>
+			<div class="discuss__say-hello_map container-fluid">
+				<div class="row no-gutters">
+					<!-- <img class="discuss__map-img" src="img/map.jpg" alt="map"> -->
+					<div class="col-12" id="map"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="main-footer">
+		<div class="container container-content">
+			<div class="row no-gutters">
+				<div class="main-footer__block col-lg-3 col-md-12 col-sm-12 main-footer__brandi">
+					<div class="main-footer__block-header">
+						<p class="main-footer__block-text">
+							Brandi
+						</p>
+					</div>
+					<div class="main-footer__block-content">
+						<div class="main-footer__block-body">
+							<p class="main-footer__block-text">
+								eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="main-footer__block col-lg-3 col-md-12 col-sm-12 main-footer__subscribe">
+					<div class="main-footer__block-header">
+						<p class="main-footer__block-text">
+							Subscribe
+						</p>
+					</div>
+					<div class="main-footer__block-content">
+						<div class="main-footer__block-body">
+							<div class="main-footer__block-input_wrapper">
+								<div class="main-footer__block-input">
+									<input type="text">
+									<button>
+										<img src="img/arrow-right.png" alt="button">
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="main-footer__block-footer">
+							<p class="main-footer__block-text">
+								eusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p> 
+						</div>
+					</div>
+				</div>
+				<div class="main-footer__block col-lg-6 col-md-12 col-sm-12 main-footer__explore">
+					<div class="main-footer__block-header">
+						<p class="main-footer__block-text">
+							Explore
+						</p>
+					</div>
+					<div class="main-footer__block-content">
+						<div class="main-footer__block-body">
+							<ul class="main-footer__block-body_list">
+								<li class="main-footer__block-body_list-item">
+									<a target="_blank" class="main-footer__block-body_link" href="https://envato.com/">Envato</a>
+								</li>
+								<li class="main-footer__block-body_list-item">
+									<a target="_blank" class="main-footer__block-body_link" href="https://dribbble.com/themecurve">Themecurve</a>
+								</li>
+								<li class="main-footer__block-body_list-item">
+									<a target="_blank" class="main-footer__block-body_link" href="http://kreativeshowcase.com/">Kreativeshowcase</a>
+								</li>
+								<li class="main-footer__block-body_list-item">
+									<a target="_blank" class="main-footer__block-body_link" href="https://www.facebook.com/freebies.curve/">Freebiescurve</a>
+								</li>
+							</ul>
+							<ul class="main-footer__block-body_list">
+								<li class="main-footer__block-body_list-item">
+									<a target="_blank" class="main-footer__block-body_link" href="https://themeforest.net/">Themeforest</a>
+								</li>
+								<li class="main-footer__block-body_list-item">
+									<a target="_blank" class="main-footer__block-body_link" href="https://www.microsoft.com/">Microsoft</a>
+								</li>
+								<li class="main-footer__block-body_list-item">
+									<a target="_blank" class="main-footer__block-body_link" href="https://www.google.com/">Google</a>
+								</li>
+								<li class="main-footer__block-body_list-item">
+									<a target="_blank" class="main-footer__block-body_link" href="https://www.yahoo.com/">Yahoo</a>
+								</li>
+							</ul>
+						</div>
+						<div class="main-footer__block main-footer__block-copyrights">
+							<p class="main-footer__block-body">
+								Created with * by * <br/>
+								exclusive for *
+							</p>
+							<p class="main-footer__block-footer">
+								© 201* ****. All Rights Reserved.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+	<script src="js/common.min.js"></script>
+
+</body>
+</html>

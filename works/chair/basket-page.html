@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chair</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat&display=swap" rel="stylesheet"></head>
+<body>
+    <header class="header">
+    <div class="header__wrapper">
+            <section class="our-brand">
+        <!-- <div class="logo"><img class="logo__img" src="../img/logo.png" alt="logo"></div> -->
+        <div class="logo__text">Woodbyrus</div>
+    </section>
+            <nav class="navigation">
+        <ul class="list">
+            <li class="list-item"><a href="index.html" class="list-link">Главная</a></li>
+            <li class="list-item"><a href="catalog.html" class="list-link">Каталог</a></li>
+            <li class="list-item"><a href="contacts.html" class="list-link">Контакты</a></li>
+        </ul>
+    </nav>
+
+        <div class="header__buttons">
+                <section class="login">
+        <div class="login__wrapper">
+            <button class="button login__button" id="login__button" style="width:auto;">Логин</button>
+        </div>
+        <div id="modal" class="modal">
+  
+    <form class="modal-content animate" action="#" method="post">
+      <div class="imgcontainer">
+        <span id="close__btn" class="close" title="Close Modal">&times;</span>
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Email</b></label>
+        <input type="email" placeholder="Введите email" name="email" required>
+  
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Введите пароль" name="psw" required>
+        <a class="forgot" href="#">Забыли пароль?</a>
+          
+        <button class="button" type="submit">Войти</button>
+        <div class="remember">
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+            </label>
+        </div>
+      </div>
+
+    </form>
+  </div>
+    </section>
+                <section class="basket">
+        <a href="basket-page.html">
+            <i class="fas fa-shopping-basket basket__icon icon"></i>
+            <span class="basket__count" id="product-count">1</span>
+        </a>
+    </section>
+        </div>
+        
+    </div>
+</header>
+    <main class="main basket-page">
+        <div class="basket-page__wrapper wrapper">
+            <form action="#">
+                <div class="basket-product__header">Ваша корзина:</div>
+
+                <div class="basket-product">
+                    <div class="basket-product__wrapper">
+
+                        <div class="product">
+                            <div class="product__body">
+                                <img src="img/chair.png" alt="chair">
+                                <div class="actions">
+                                    <div class="watch"><i class="fas fa-eye"></i></div>
+                                    <div class="buy"><i class="fas fa-shopping-basket"></i></div>
+                                </div>
+                            </div>
+                            <div class="product__title">
+                                <div class="product__name">Наименование</div>
+                                <div class="product__price">
+                                    <span class="product__money">123</span> 
+                                    <span class="product__currency">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basket-product__count">
+                            <a class="minus">-</a>
+                            <input class="basket-product__number" type="text" value="1">
+                            <a class="plus">+</a>
+                        </div>
+
+                        <div class="basket-product__final-price">
+                            <span class="basket-product__money">123</span>
+                            <span class="basket-product__currency"> $</span>
+                        </div>
+
+                        <div class="basket-product__delete" title="Убрать из корзины"><i class="fas fa-shopping-basket basket__icon basket__icon_delete"></i></div>
+                    </div>
+                </div>
+                <div class="basket-product">
+                    <div class="basket-product__wrapper">
+
+                        <div class="product">
+                            <div class="product__body">
+                                <img src="img/chair.png" alt="chair">
+                                <div class="actions">
+                                    <div class="watch"><i class="fas fa-eye"></i></div>
+                                    <div class="buy"><i class="fas fa-shopping-basket"></i></div>
+                                </div>
+                            </div>
+                            <div class="product__title">
+                                <div class="product__name">Наименование</div>
+                                <div class="product__price">
+                                    <span class="product__money">123</span> 
+                                    <span class="product__currency">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basket-product__count">
+                            <a class="minus">-</a>
+                            <input class="basket-product__number" type="text" value="1">
+                            <a class="plus">+</a>
+                        </div>
+
+                        <div class="basket-product__final-price">
+                            <span class="basket-product__money">123</span>
+                            <span class="basket-product__currency"> $</span>
+                        </div>
+
+                        <div class="basket-product__delete" title="Убрать из корзины"><i class="fas fa-shopping-basket basket__icon basket__icon_delete"></i></div>
+                    </div>
+                </div>
+                <div class="basket-product">
+                    <div class="basket-product__wrapper">
+
+                        <div class="product">
+                            <div class="product__body">
+                                <img src="img/chair.png" alt="chair">
+                                <div class="actions">
+                                    <div class="watch"><i class="fas fa-eye"></i></div>
+                                    <div class="buy"><i class="fas fa-shopping-basket"></i></div>
+                                </div>
+                            </div>
+                            <div class="product__title">
+                                <div class="product__name">Наименование</div>
+                                <div class="product__price">
+                                    <span class="product__money">123</span> 
+                                    <span class="product__currency">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basket-product__count">
+                            <a class="minus">-</a>
+                            <input class="basket-product__number" type="text" value="1">
+                            <a class="plus">+</a>
+                        </div>
+
+                        <div class="basket-product__final-price">
+                            <span class="basket-product__money">123</span>
+                            <span class="basket-product__currency"> $</span>
+                        </div>
+
+                        <div class="basket-product__delete" title="Убрать из корзины"><i class="fas fa-shopping-basket basket__icon basket__icon_delete"></i></div>
+                    </div>
+                </div>
+
+
+                <div class="final-price">
+                    <div class="final-price__title">Всего на сумму:</div>
+                    <div id="checkout-price"></div>
+                    <span class="basket-product__currency"> $</span>
+                </div>
+                <div class="final-checkout__button">
+                    <input id="final-checkout" type="submit" value="Оформить заказ">
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <script src="js/login__modal.min.js"></script>
+    <script src="js/basketHandler.min.js"></script>
+</body>
+</html>

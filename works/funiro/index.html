@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Funiro</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content='true' name='HandheldFriendly'/>
+<meta content='width' name='MobileOptimized'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="preloader">
+    <div class="loadingio-spinner-rolling-2qt0oauf1xb"><div class="ldio-6waattdx13d"><div></div></div></div>
+</div>
+
+    <div class="navigation">
+    <div class="navigation__wrapper">
+        <div class="navigation__body container">
+
+            <div class="brand">Funiro.</div>
+
+            <div class='burger' data-burger='burger'>
+                <div class='burger__button' data-burger='button'>
+                    <div class='burger__button_bar1'></div>
+                    <div class='burger__button_bar2'></div>
+                    <div class='burger__button_bar3'></div>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list accordion burger__content" data-accordion="accordion" data-burger="content">
+                    <li class="nav__list-item accordion__block" data-accordion="group">
+                        <div class="nav__list-link accordion__button" data-accordion="button group-button">
+                            <span class="nav__title">Products</span>
+                            <i class="icon-arrow_down" data-accordion="icon"></i>
+                        </div>
+                        <ul class="nav__sublist accordion__content" data-accordion="content">
+                            <li class="nav__sublist-item"><a href="" class="nav__sublist-link">1</a></li>
+                            <li class="nav__sublist-item"><a href="" class="nav__sublist-link">two</a></li>
+                            <li class="nav__sublist-item"><a href="" class="nav__sublist-link">Product</a></li>
+                            <li class="nav__sublist-item"><a href="" class="nav__sublist-link">Super Product</a></li>
+                            <li class="nav__sublist-item"><a href="" class="nav__sublist-link">Super-Puper Product</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__list-item" data-accordion="group">
+                        <div class="nav__list-link accordion__button" data-accordion="button group-button">
+                            <span class="nav__title">Rooms</span>
+                            <i class="icon-arrow_down" data-accordion="icon"></i>
+                        </div>
+                        <ul class="nav__sublist accordion__content" data-accordion="content">
+                            <li class="nav__sublist-item"><a href="" class="nav__sublist-link">1</a></li>
+                            <li class="nav__sublist-item"><a href="" class="nav__sublist-link">two</a></li>
+                            <li class="nav__sublist-item"><a href="" class="nav__sublist-link">Room</a></li>
+                            <li class="nav__sublist-item"><a href="" class="nav__sublist-link">Room 4</a></li>
+                            <li class="nav__sublist-item"><a href="" class="nav__sublist-link">Ultra Room</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-link nav__title">Inspirations</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="search burger__content" data-burger="content">
+                <form action="" class="search__form" id="search__form">
+                    <button type="submit" form="search__form" class="search__button icon-search"></button>
+                    <input type="text" placeholder="Search for minimalist chair" class="search__input">
+                </form>
+                <div class="search__result" style="display: none;"></div>
+            </div>
+
+            <div class="favorites">
+                <div class="favorites__wrapper">
+                    <div class="empty fadeIn">You do not have favorites</div>
+                </div>
+            </div>
+
+            <div class="cart">
+                <div class="cart__wrapper">
+                    <div class="empty fadeIn">Your cart is empty</div>
+                </div>
+            </div>
+
+
+
+            <div class="actions">
+                <div class="actions__wrapper">
+                    <div class="actions__search actions__action" data-burger="button">
+                        <i class="icon-search"></i>
+                    </div>
+                    <div class="actions__favorites actions__action">
+                        <i class="icon-heart"></i>
+                        <div class="actions__favorites-label">0</div>
+                    </div>
+                    <div class="actions__cart actions__action">
+                        <i class="icon-cart"></i>
+                        <div class="actions__cart-label">0</div>            
+                    </div>
+                    <div class="actions__profile actions__action profile" data-modal="modal">
+                        <a class="profile__link" data-modal="open">
+                            <img class="profile__avatar" src="img/avatar.png" alt="">
+                        </a>
+
+                        <div class="modal-login__window " data-modal="window">
+                            <div class="modal-login__window-body modalAnimate">
+                    
+                                <form class="modal-login form-modal-login " action="#" method="post">
+                                    <span class="modal-login__close" data-modal="close"  title="Close Modal">&times;</span>
+                                
+                                    <div class="form-modal-login__content">
+                                    <label class="form-modal-login__label" for="form-modal-login__email"><b>Email</b></label>
+                                    <input class="form-modal-login__input" type="email" placeholder="Введите email" id="form-modal-login__email" name="email" required>
+                                
+                                    <label class="form-modal-login__label" for="form-modal-login__psw"><b>Пароль</b></label>
+                                    <input class="form-modal-login__input" type="password" placeholder="Введите пароль" id="form-modal-login__psw" name="password" required>
+                                    <a class="form-modal-login__forgot" href="#">Забыли пароль?</a>
+                                    
+                                    <div class="form-modal-login__buttons">
+                                        <button class="form-modal-login__button form-modal-login__button_enter" type="submit" data-modal="accept">Войти</button>
+                                        <button class="form-modal-login__button form-modal-login__button_close" type="button" data-modal="close">Отмена</button>
+                                    </div>
+                                        <div class="form-modal-login__remember">
+                                        <input class="form-modal-login__input" id="form-modal-login__remember" type="checkbox" name="remember-me" >
+                                        <label class="form-modal-login__label" for="form-modal-login__remember" >Запомнить меня</label>
+                                    </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <header class="header">
+        <div class="header__wrapper">
+            <!-- HERO -->
+<section class="header__hero hero">
+    <div class="hero__wrapper container">
+
+        <div class="hero__promo promo-hero">
+            <div class="promo-hero__wrapper">
+
+                <div class="promo-hero__title">
+                    High-Quality Furniture Just For You
+                </div>
+                <div class="promo-hero__body">Our furniture is made from selected and best quality materials that are suitable for your dream home</div>
+                <div class="promo-hero__button button">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__slider slider">
+            <div class='hero__swiper swiper-container slider__container'>
+                <div class='swiper-wrapper slider__wrapper'>
+                    <div class='swiper-slide slider__slide'>
+                        <div class="slider__img" ><img src="img/hero-slide_1.jpg" alt=""></div>
+                    </div>
+                    <div class='swiper-slide slider__slide'>
+                        <div class="slider__img" ><img src="img/hero-slide_2.jpg" alt=""></div>
+                    </div>
+                    <div class='swiper-slide slider__slide'>
+                        <div class="slider__img" ><img src="img/hero-slide_3.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="slider__controls">
+                <div class='slider__dots'></div>
+                <div class="slider__arrows">
+                    <div class="arrow"><i class="icon-arrow_left slider__arrows_prev"></i></div>
+                    <div class="arrow"><i class="icon-arrow_right slider__arrows_next"></i></div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    <div class="info-slider swiper-container">
+        <div class="swiper-wrapper">
+            <div class="info-slider__wrapper swiper-slide">
+                <div class="info-slider__block container">
+                    <a href="" class="info-slider__block_wrapper">
+                        <div class="info-slider__title">Bohauss</div>
+                        <div class="info-slider__body">Luxury big sofa 2-seat</div>
+                        <div class="info-slider__footer">
+                            <div class="info-slider__price">
+                                <div class="info-slider__price_new">Rp 17.000.000</div>
+                                <div class="info-slider__price_old"></div>
+                            </div>
+                            <div class="info-slider__arrow"><i class="icon-longarrow_right"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div> 
+            <div class="info-slider__wrapper swiper-slide">
+                <div class="info-slider__block container">
+                    <a href="" class="info-slider__block_wrapper">
+                        <div class="info-slider__title">Bohauss 2</div>
+                        <div class="info-slider__body">Luxury big sofa 2-seat</div>
+                        <div class="info-slider__footer">
+                            <div class="info-slider__price">
+                                <div class="info-slider__price_new">Rp 17.000.000</div>
+                                <div class="info-slider__price_old"></div>
+                            </div>
+                            <div class="info-slider__arrow"><i class="icon-longarrow_right"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div> 
+            <div class="info-slider__wrapper swiper-slide">
+                <div class="info-slider__block container">
+                    <a href="" class="info-slider__block_wrapper">
+                        <div class="info-slider__title">Bohauss 3</div>
+                        <div class="info-slider__body">Luxury big sofa 2-seat</div>
+                        <div class="info-slider__footer">
+                            <div class="info-slider__price">
+                                <div class="info-slider__price_new">Rp 17.000.000</div>
+                                <div class="info-slider__price_old"></div>
+                            </div>
+                            <div class="info-slider__arrow"><i class="icon-longarrow_right"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+        </div>
+    </header>
+    <main>
+        <section class="feature">
+    <div class="container">
+        <div class="feature__wrapper">
+
+            <div class="feature__body">
+
+                <div class="feature__block">
+                    <div class="feature__icon"><i class="icon-cup"></i></div>
+                    <div class="feature__description">
+                        <div class="feature__title">Hight Quality</div>
+                        <div class="feature__subtitle">crafted from top materials</div>
+                    </div>    
+                </div>
+
+                <div class="feature__block">
+                    <div class="feature__icon"><i class="icon-check"></i></div>
+                    <div class="feature__description">
+                        <div class="feature__title">Warranty Protection</div>
+                        <div class="feature__subtitle">Over 2 years</div>
+                    </div>    
+                </div>
+
+                <div class="feature__block">
+                    <div class="feature__icon"><i class="icon-hand"></i></div>
+                    <div class="feature__description">
+                        <div class="feature__title">Free Shipping</div>
+                        <div class="feature__subtitle">Order over 150 $</div>
+                    </div>    
+                </div>
+                
+                <div class="feature__block">
+                    <div class="feature__icon"><i class="icon-head"></i></div>
+                    <div class="feature__description">
+                        <div class="feature__title">24 / 7 Support</div>
+                        <div class="feature__subtitle">Dedicated support</div>
+                    </div>    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="products">
+    <div class="products__wrapper container">
+        <div class="products__body">
+
+            <div class="products__title">
+                <p>Our Products</p>
+            </div>
+
+            <div class="products__product product" data-modal="modal">
+
+                <div data-modal='window' class="modal-gallery__window">
+                    <div class="modal-gallery__window-body" data-modal="content">
+                        <div class="modal-gallery__caption modalAnimate" data-modal="caption">
+                            <!-- <span>Modal Caption</span> -->
+                        </div>
+                        <span data-modal="close" class="modal-gallery__close">×</span>
+                        <div class="modal-gallery__image modalAnimate" >
+                            <img data-modal="image-modal">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Syltherine" class="product__block">
+                    <div class="product__attention">
+                        <div class="product__attention_sale attention-product">-30%</div>
+                    </div>
+                    <div class="products__hover hover-products">
+                        <div class="hover-products__buttons">
+                            <div class="hover-products__button">
+                                <button data-modal="open" class="hover-products__button_watch">Watch</button>
+                            </div>
+                            <div class="hover-products__button">
+                                <button class="hover-products__button_add">Add to cart</button>
+                            </div>
+                            <div class="hover-products__actions">
+                                <div class="hover-products__share">
+                                    <i class="icon-share"></i>
+                                    <p>Share</p>
+                                </div>
+                                <div class="hover-products__favorites">
+                                    <i class="icon-heart"></i>
+                                    <p>Like</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__image">
+                        <img src="img/product_1.png" alt="" data-modal="image-gallery" data-src="img/product_1.png">
+                    </div>
+                    <div class="product__description" data-modal="captionContent">
+                        <div class="product__title">Syltherine</div>
+                        <div class="product__body">Stylish cafe chair</div>
+                        <div class="product__price">
+                            <div class="product__price_new">Rp 2.500.500</div>
+                            <div class="product__price_old">Rp 3.500.000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Leviosa" class="product__block">
+                    <div class="product__attention">
+                        <div class="product__attention_sale attention-product">-30%</div>
+                    </div>
+
+                    <div class="products__hover hover-products">
+                        <div class="hover-products__buttons">
+                            <div class="hover-products__button">
+                                <button data-modal="open" class="hover-products__button_watch">Watch</button>
+                            </div>
+                            <div class="hover-products__button">
+                                <button class="hover-products__button_add">Add to cart</button>
+                            </div>
+                            <div class="hover-products__actions">
+                                <div class="hover-products__share">
+                                    <i class="icon-share"></i>
+                                    <p>Share</p>
+                                </div>
+                                <div class="hover-products__favorites">
+                                    <i class="icon-heart"></i>
+                                    <p>Like</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__image"><img src="img/product_2.png" alt="" data-modal="image-gallery" data-src="img/product_2.png"></div>
+                    <div class="product__description" data-modal="captionContent">
+                        <div class="product__title">Leviosa</div>
+                        <div class="product__body">Stylish cafe chair</div>
+                        <div class="product__price">
+                            <div class="product__price_new">Rp 2.500.500</div>
+                            <div class="product__price_old"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Lolito" class="product__block">
+                    <div class="product__attention">
+                        <div class="product__attention_sale attention-product">-50%</div>
+                    </div>
+
+                    <div class="products__hover hover-products">
+                        <div class="hover-products__buttons">
+                            <div class="hover-products__button">
+                                <button data-modal="open" class="hover-products__button_watch">Watch</button>
+                            </div>
+                            <div class="hover-products__button">
+                                <button class="hover-products__button_add">Add to cart</button>
+                            </div>
+                            <div class="hover-products__actions">
+                                <div class="hover-products__share">
+                                    <i class="icon-share"></i>
+                                    <p>Share</p>
+                                </div>
+                                <div class="hover-products__favorites">
+                                    <i class="icon-heart"></i>
+                                    <p>Like</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__image"><img src="img/product_3.png" alt="" data-modal="image-gallery" data-src="img/product_3.png"></div>
+                    <div class="product__description" data-modal="captionContent">
+                        <div class="product__title">Lolito</div>
+                        <div class="product__body">Luxury big sofa</div>
+                        <div class="product__price">
+                            <div class="product__price_new">Rp 7.000.500</div>
+                            <div class="product__price_old">Rp 14.000.000</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Respira" class="product__block">
+                    <div class="product__attention">
+                        <div class="product__attention_new attention-product">New</div>
+                    </div>
+
+                    <div class="products__hover hover-products">
+                        <div class="hover-products__buttons">
+                            <div class="hover-products__button">
+                                <button data-modal="open" class="hover-products__button_watch">Watch</button>
+                            </div>
+                            <div class="hover-products__button">
+                                <button class="hover-products__button_add">Add to cart</button>
+                            </div>
+                            <div class="hover-products__actions">
+                                <div class="hover-products__share">
+                                    <i class="icon-share"></i>
+                                    <p>Share</p>
+                                </div>
+                                <div class="hover-products__favorites">
+                                    <i class="icon-heart"></i>
+                                    <p>Like</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__image"><img src="img/product_4.png" alt="" data-modal="image-gallery" data-src="img/product_4.png"></div>
+                    <div class="product__description" data-modal="captionContent">
+                        <div class="product__title">Respira</div>
+                        <div class="product__body">Minimalist fan</div>
+                        <div class="product__price">
+                            <div class="product__price_new">Rp 500.000</div>
+                            <div class="product__price_old"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products__button">
+                <button class="products__load">Show More</button>
+            </div>
+
+    </div>
+</section>
+        <section class="inspirations">
+    <div class="inspirations__wrapper container">
+            
+        <div class="inspirations__title">
+            <div class="inspirations__title-header">
+                50+ Beautiful rooms inspiration
+            </div>
+            <div class="inspirations__title-body">
+                Our designer already made a lot of beautiful prototipe of rooms that inspire you
+            </div>
+            <div class="inspirations__title-button button">
+                <a href="">Explore more</a>
+            </div>
+        </div>
+
+        <div class="inspirations__slider slider">
+
+            <div class="swiper-container inspirations__swiper slider__container">
+                <div class="swiper-wrapper slider__wrapper">
+
+                    <div class="swiper-slide slider__slide">
+                        <div class="slider__img" data-swiper-parallax-scale="0.8" data-swiper-parallax-x='15' data-swiper-parallax-y='60'>
+                            <img src="img/inspirations_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <div class="slider__img" data-swiper-parallax-scale="0.8" data-swiper-parallax-x='15' data-swiper-parallax-y='60'>
+                            <img src="img/inspirations_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <div class="slider__img" data-swiper-parallax-scale="0.8" data-swiper-parallax-x='15' data-swiper-parallax-y='60'>
+                            <img src="img/inspirations_3.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="info-slider_inspirations swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="info-slider__wrapper swiper-slide">
+                        <div class="info-slider__block">
+                            <div class="info-slider__block_wrapper">
+                                <a href="" class="info-slider__body">
+                                    01 - Bed Room
+                                    <div class="info-slider__title">Inner Peace</div>
+                                </a>
+                                <a href="" class="info-slider__footer">
+                                    <div class="info-slider__arrow button"><i class="icon-longarrow_right"></i></div>
+                                </a>    
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="info-slider__wrapper swiper-slide">
+                        <div class="info-slider__block">
+                            <div class="info-slider__block_wrapper">
+                                <a href="" class="info-slider__body">
+                                    02 - Bed Room
+                                    <div class="info-slider__title">Inner Peace 2</div>
+                                </a>
+                                <a href="" class="info-slider__footer">
+                                    <div class="info-slider__arrow button"><i class="icon-longarrow_right"></i></div>
+                                </a>    
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="info-slider__wrapper swiper-slide">
+                        <div class="info-slider__block">
+                            <div class="info-slider__block_wrapper">
+                                <a href="" class="info-slider__body">
+                                    03 - Bed Room
+                                    <div class="info-slider__title">Inner Peace 3</div>
+                                </a>
+                                <a href="" class="info-slider__footer">
+                                    <div class="info-slider__arrow button"><i class="icon-longarrow_right"></i></div>
+                                </a>    
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+
+            <div class='slider__dots_inspirations'></div>
+            <div class="arrow arrow__prev">
+                <i class="icon-arrow_left slider__arrows_inspirations_prev"></i>
+            </div>
+            <div class="arrow arrow__next">
+                <i class="icon-arrow_right slider__arrows_inspirations_next"></i>
+            </div>
+            
+        </div>
+
+    </div>
+
+</section>
+        <section class="tips">
+    <div class="tips__wrapper container">
+        <div class="tips__body">
+            <div class="tips__title">Tips & Tricks</div>
+            <div class="tips__slider">
+
+                <div class='swiper-container slider-tips'>
+                    
+                    <div class='swiper-wrapper slider-tips__wrapper'>
+                        <div class='swiper-slide slider-tips__slide'>
+                            <div class="slider-tips__img">
+                                <img src="img/tips_1.png" alt="">
+                            </div>
+                            <div class="slider-tips__title">How to create a living room to love</div>
+                            <div class="slider-tips__date">20 jan 2020</div>
+                        </div>
+                        <div class='swiper-slide slider-tips__slide'>
+                            <div class="slider-tips__img">
+                                <img src="img/tips_2.png" alt="">
+                            </div>
+                            <div class="slider-tips__title">Solution for clean look working space</div>
+                            <div class="slider-tips__date">10 jan 2020</div>
+                        </div>
+                        <div class='swiper-slide slider-tips__slide'>
+                            <div class="slider-tips__img">
+                                <img src="img/tips_3.png" alt="">
+                            </div>
+                            <div class="slider-tips__title">Make your cooking activity more fun with good setup</div>
+                            <div class="slider-tips__date">20 jan 2020</div>
+                        </div>
+                    </div>
+                
+                    
+                </div>
+                
+            </div>
+            <div class='arrow arrow__prev'>
+                <i class="icon-arrow_left tips-button-prev"></i>
+            </div>
+            <div class='arrow arrow__next'>
+                <i class="icon-arrow_right tips-button-next"></i>
+            </div>
+            <div class='tips-pagination'></div>
+        </div>
+    </div>
+</section>
+        <section class="share">
+    <div class="share__wrapper">
+        <div class="share__body">
+
+            <div class="share__header">
+                <p class="share__subtitle">Share your setup with</p>
+                <h2 class="share__title">#FuniroFurniture</h2>
+            </div>
+
+            <div class="share__gallery gallery-share lightgallery">
+                <div class="gallery-share__column gallery-share__column_left">
+                    <div class="gallery-share__row gallery-share__row_top">
+                        <a href="img/share_1.png" class="gallery-share__img gallery-share__img_1">
+                            <img src="img/share_1.png" alt="">
+                        </a>
+                        <a href="img/share_2.png" class="gallery-share__img gallery-share__img_2">
+                            <img src="img/share_2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery-share__row gallery-share__row_bottom">
+                        <a href="img/share_3.png" class="gallery-share__img gallery-share__img_3">
+                            <img src="img/share_3.png" alt="">
+                        </a>
+                        <a href="img/share_4.png" class="gallery-share__img gallery-share__img_4">
+                            <img src="img/share_4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-share__column gallery-share__column_center">
+                    <a href="img/share_5.png" class="gallery-share__img gallery-share__img_5">
+                        <img src="img/share_5.png" alt="">
+                    </a>
+                </div>
+                <div class="gallery-share__column gallery-share__column_right">
+                    <div class="gallery-share__row gallery-share__row_top">
+                        <a href="img/share_6.png" class="gallery-share__img gallery-share__img_6">
+                            <img src="img/share_6.png" alt="">
+                        </a>
+                        <a href="img/share_7.png" class="gallery-share__img gallery-share__img_7">
+                            <img src="img/share_7.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery-share__row gallery-share__row_bottom">
+                        <a href="img/share_8.png" class="gallery-share__img gallery-share__img_8">
+                            <img src="img/share_8.png" alt="">
+                        </a>
+                        <a href="img/share_9.png" class="gallery-share__img gallery-share__img_9">
+                            <img src="img/share_9.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+    <div class="footer__wrapper container">
+        <div class="footer__body">
+
+            <div class="footer__info info-footer footer__column">
+                <ul class="info-footer__list">
+                    <li class="info-footer__list-item footer__title">Funiro</li>
+                    <li class="info-footer__list-item info-footer__info">Worldwide furniture store since 2020. We sell over 1000+ branded products on our website</li>
+                    <li class="info-footer__list-item">
+                        <a href="https://goo.gl/maps/h4DZ5yNPfPXPs1qL6" class="info-footer__list-link info-footer__location" target="_blank"><i class="icon-location"></i>Sawojajar Malang, Indonesia</a>
+                    </li>
+                    <li class="info-footer__list-item">
+                        <a href="tel:+62894563455" class="info-footer__list-link info-footer__phone" target="_blank"><i class="icon-phone"></i> +6289 456 3455</a>
+                    </li>
+                    <li class="info-footer__list-item">
+                        <a href="https://www.funiro.com" class="info-footer__list-link info-footer__site" target="_blank">www.funiro.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__navigation navigation-footer footer__column">
+                <div class="navigation-footer__block">
+                    <div class="navigation-footer__title" data-burger="button">
+                        <span class="footer__title">Menu</span>
+                        <i class="icon-arrow_down" data-burger="arrow"></i>
+                    </div>
+                    <ul class="navigation-footer__list" data-burger="content">
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">Products</a></li>
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">Rooms</a></li>
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">Inspirations</a></li>
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">About Us</a></li>
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">Terms & Policy</a></li>    
+                    </ul>
+                </div>
+                <div class="navigation-footer__block">
+                    <div class="navigation-footer__title" data-burger="button">
+                        <span class="footer__title">Account</span>
+                        <i class="icon-arrow_down" data-burger="arrow"></i>
+                    </div>
+                    <ul class="navigation-footer__list" data-burger="content">
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">My Account</a></li>
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">Checkout</a></li>
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">My Cart</a></li>
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">My catalog</a></li>
+                    </ul>
+                </div>
+                <div class="navigation-footer__block">
+                    <div class="navigation-footer__title" data-burger="button">
+                        <span class="footer__title">Stay Connected</span>
+                        <i class="icon-arrow_down" data-burger="arrow"></i>
+                    </div>
+                    <ul class="navigation-footer__list" data-burger="content">
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">Facebook</a></li>
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">Instagram</a></li>
+                        <li class="navigation-footer__list-item"><a href="" class="navigation-footer__list-link">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__email email-footer footer__column">
+                <div class="footer__title email-footer__title">Stay Updated</div>
+                <form id="email" class="email-footer__form" data-valid="valid">
+                    <div class="email-footer__input pseudo">
+                        <input type="email" placeholder="Enter your email"  data-valid='input' required>
+                    </div>
+                    <button type="submit" class="icon-paperplane email-footer__button" data-valid='button'></button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.min.js"></script>
+</body>
+</html>
